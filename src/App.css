@@ -1,3 +1,38 @@
 .App {
   text-align: center;
+  background-color: white;
+}
+
+.encabezado_section {
+  height: 600px;
+  background-color: lightblue;
+}
+
+.productos_genericos_banner {
+  height: 80%;
+  width: 90%;
+}
+.about_us_section {
+  height: 400px;
+  background-color: wheat;
+}
+.productos_servicios_section {
+  background-color: greenyellow;
+  height: 400px;
+}
+.productos_servicios_container {
+  height: 100%;
+  width: 60%;
+  margin-inline: 20%;
+  text-align: left;
+}
+p {
+  padding-left: 100px;
+}
+.productos_genericos_slider {
+  float: left;
+}
+.pie_de_pagina_section {
+  height: 200px;
+  background-color: indianred;
 }
