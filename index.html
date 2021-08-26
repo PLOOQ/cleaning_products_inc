@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cleaning Products Inc.</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container">
+          <a href="#" class="navbar-brand">Cleaning Products <span class="text-warning"> Inc.</span></a>
+          <button
+            class="navbar-toggler"
+            typer="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="#learn" class="nav-link"> What you'll Learn</a>
+              </li>
+              <li class="nav-item">
+                <a href="#questions" class="nav-link"> Questions</a>
+              </li>
+              <li class="nav-item">
+                <a href="#instructors" class="nav-link"> Instructors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    
+    <main>
+      <section class="bg-dark text-light text-center py-3 ">
+        <div>
+          <img
+            src="img/cleaning_supplies_nature_banner.jpeg"
+            class="p-5 img-fluid full"
+            alt="cleaning_supplies_banner"
+          />
+        </div>
+        <div class="container-fluid">
+          <p class="h1">
+            No esperes más
+          </p>
+          <form action="#info">
+            <button  class="btn btn-primary btn-sm fs-3"> Contáctanos!</button>
+        </form>
+        </div>
+      </section>
+
+      <section class="bg-light text-dark p-5 text-center text-sm-start justify-content-between">
+        <h2>Productos y Servicios</h2>
+        <div class="container w-75 d-sm-flex flex-row"> 
+          <img src="img/generic_1.jpg" alt="generic_1" class="img-fluid w-75 h-75 my-5" />
+          <p class="text-left my-5 fs-3">
+            Contamos con la mayor variedad y mejor calidad de productos en el
+            mercado de la industria de productos de limpieza en la categoria de
+            químicos.
+          </p>
+        </div>
+      </section>
+
+      <section class="bg-dark text-light p-5  text-center text-sm-start justify-content-between">
+        <h2>Quiénes somos</h2>
+        <div class="container d-sm-flex flex-row" >
+          <img src="img/engineers.jpeg" alt="generic_1" class="img-fluid w-50 h-50" />
+          <div class=" p-5 text-center ">
+          <p class="text-left fs-4 ">
+            Contamos con la mayor variedad y mejor calidad de productos en el
+            mercado de la industria en la categoria de productos químicos de limpieza gracias 
+            al esfuerzo de nuestros expertos y trabajadores que hacen llegar el producto a su casa
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <footer>
+    <section id="info" class="bg-light text-dark text-center text-light" >
+      <div class="my-3 mx-auto">
+        <h2>Contáctanos directamente o visítanos directamente</h2>
+      </div>
+      <div class = "w-50 container">
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre Completo</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan Pérez García">
+        </div>
+
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com">
+        </div>
+
+        <div class="form-group mb-3">
+          <label for="comments">Cómo podemos ayudarle?</label>
+          <textarea class="form-control" id="comments" rows="3" placeholder="Escriba aquí..."></textarea>
+        </div>
+        <button  class="btn btn-primary btn-sm fs-3 mb-5"> Enviar!</button>
+      </div>
+      </section>
+
+
+  </footer>
+
+</html>
+
