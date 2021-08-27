@@ -67,8 +67,8 @@
         
         <div class="container w-75 "> 
 
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-inner" >
               <div class="carousel-item active" data-bs-interval="5000">
                 <img src="img/generic_cleaning_products.jpeg" class="d-block w-100" alt="...">
               </div>
@@ -83,7 +83,7 @@
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button"  data-bs-target="#carouselExampleControls" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -118,31 +118,32 @@
 
     </main>
 
-    
   
 
     <section id="info" class="bg-light text-dark text-center text-light" >
       <div class="my-3 mx-auto">
         <h2>Contáctanos directamente </h2>
       </div>
-      <div class = "w-50 container">
+      <form id = "contact-form" class = "w-50 container">
 
         <div class="mb-3">
+          <input type="hidden" name="contact_number">
           <label class="mb-2" for="name" class="form-label">Nombre completo</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan Pérez García">
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan Pérez García" name="user_name">
         </div>
 
         <div class="mb-3">
           <label class="mb-2"for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com">
+          <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com" name="user_email">
         </div>
 
         <div class="form-group mb-3">
           <label class="mb-2" for="comments">Cómo podemos ayudarle?</label>
-          <textarea class="form-control" id="comments" rows="3" placeholder="Escriba aquí..."></textarea>
+          <textarea class="form-control" id="comments" rows="3" placeholder="Escriba aquí..." name="text_body"></textarea>
         </div>
-        <button  class="btn btn-primary btn-sm fs-3 mb-5"> Enviar</button>
-      </div>
+        <button  type = "submit" class="btn btn-primary btn-sm fs-3 mb-5"> Enviar</button>
+      </form>
+
       </section>
 
       <section id="info" class="bg-light text-dark text-center text-light pb-5" >
@@ -152,10 +153,12 @@
 
         <div class="container d-sm-flex w-50">
           <div class="row g-1">
+
             <div class="col">
               <div id="map" class="img-fluid"></div>
             </div>
-            <div class="col">
+
+          <div class="col">
             <p class="lead">
               Visítanos en nuestras oficinas en <br/>
               Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 
@@ -168,6 +171,7 @@
               <br/> name@example.com
             </p>
           </div>
+
           </div>
           
           <div></div>
@@ -187,7 +191,29 @@
         zoom:15,
         });
       </script>
-      
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_P87oshGpbh5hihVWz4cTD');
+        })();
+    </script>
+     <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('contact_service', 'contact_form', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
 
 
 </body>
