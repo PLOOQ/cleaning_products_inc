@@ -10,4 +10,27 @@ Quienes somos
 - Explicar con detalles quien es Cleaning Products Inc
 
 General 
-- Agregar marcos alrededor de las imagenes 
+
+Desmadre con los fonts, no deben ser diferentes. Se ve mal esta pantalla de landing, 
+la foto esta muy pixeleada. Ortografía
+Carrusel ocupa espacio excesivo. Lo mejor seria que el texto estaría a 1/3 de la pantalla y el carrusel a 2/3
+Quienes somos también es un desmadre. El texto esta muy junto a la imagen,
+Los labels no deben estar centrados
+Me to Everyone (11:39 AM)
+Los labels mejor que estén a la izquierda
+A un lado el forms y al otro lado el mapa
+En el mobil se deve ber el mapa
+Me to Everyone (11:40 AM)
+Sugerencia: Cuando este en el desktop, que del lado izquierdo este el forms y del lado derecho el mapa y dirección, 
+map arriba y dirección abajo
+Usar dm lg de bootstrap
+El carrusel debe ocupar mas del ancho en mobil
+Me to Everyone (11:43 AM)
+Corregir la posición del texto y que la imagen sea de mejor calidad
+Pexels.com
+Sergio to Everyone (11:44 AM)
+unsplash
+
+
+landing page example:
+https://unbounce.com/landing-page-examples/best-landing-page-design-examples/
