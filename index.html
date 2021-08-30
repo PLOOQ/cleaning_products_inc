@@ -12,7 +12,8 @@
 
   <body>
     <header>
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-default bg-dark navbar-dark" style="position: fixed; width: 100%;">
+    <div class="fixed-top">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-default bg-dark navbar-dark" >
         <div class="container text-dark">
           <a href="#" class="navbar-brand">Cleaning Products <span class="text-warning"> Inc.</span></a>
           <button
@@ -38,44 +39,58 @@
           </div>
         </div>
       </nav>
+    </div>
     </header>
 
     
     <main>
       <section class="bg-dark text-light text-center ">
-        <div class="nod">
-        <div class="container-fluid pt-5">
-          <h1 class="text-dark align-middle">
-            Cansado de confiar en productos genéricos o que prometen lo imposible?
+        <div class="banner">
 
-            <br/>
-            
-            No esperes más
-          <a  href="#info" class="btn btn-primary btn-sm fs-2 mb-1"> Contáctanos!</a>
-          </h1>
+          <div class="row text-dark align-middle">
+            <div class="col-sm">
+              <div class="container-fluid fs-5" style="padding-inline: 40px;">
+                <h1 class=""> La primera impresión es la más importante</h1>
+                <p>
+                <br/>
+                <br/>
+                Porque un espacio limpio es un espacio elegante
+                <hr/>
+                ¡Visita nuestras oficinas 
+                o contáctanos directamente!
+                <a id="contactanos_btn" href="#info" class="btn fs-5 my-3"> Contáctanos aquí </a>
+              </p>
+              </div>
+            </div>
+            <div class="col-sm">
+            </div>
+            </div>
+          </div>
+
         </div> 
+
         </div>
       </section>
 
       <section id="products_services" class="bg-light text-dark p-5 text-center text-sm-start justify-content-between">
 
-        <div class="container text-center">
-          <h2>Productos y Servicios</h2>
-          <hr/>
-        </div>
-        
-        <div class="container w-75 "> 
 
-          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
+          <div class="container text-center">
+            <h2>Productos y Servicios</h2>
+            <hr/>
+          </div>
+        
+          <div id="myCarousel" class="container"> 
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
             <div class="carousel-inner" >
               <div class="carousel-item active" data-bs-interval="5000">
-                <img src="img/generic_cleaning_products.jpeg" class="d-block w-100" alt="...">
+                <img src="img/generic_cleaning_products.jpeg" class="d-block w-50 mx-auto car-img" alt="...">
               </div>
               <div class="carousel-item"data-bs-interval="5000">
-                <img src="img/supplies-stock.jpeg" class="d-block w-100" alt="...">
+                <img src="img/supplies-stock.jpeg" class="d-block w-50 mx-auto car-img" alt="...">
               </div>
               <div class="carousel-item"data-bs-interval="5000">
-                <img src="img/generic_3.jpeg" class="d-block w-100" alt="...">
+                <img src="img/generic_3.jpeg" class="d-block w-50 mx-auto car-img" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -87,13 +102,17 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+          </div>
+        </div>  
 
-          <p class="text-left my-5 fs-3">
+        <div class="w-75 mx-auto my-5 fs-3">
+          <p class="text-justify">
             Contamos con la mayor variedad y calidad de productos en el
             mercado de la industria de químicos de limpieza. Para todas 
             las necesidades de la casa, desde el sanitario, pisos  difíciles 
             de limpiar, trastes sucios, y mucho más!
           </p>
+          
         </div>
 
       </section>
@@ -108,7 +127,7 @@
         <div class="container d-sm-flex flex-row" >
           <img src="img/engineers.jpeg" alt="generic_1" class="img-fluid w-50 h-50" />
           <div class=" p-1 text-center ">
-          <p class="text-left fs-4 ">
+          <p class="fs-4 px-4 text-justify">
             Contamos con la mayor variedad y mejor calidad de productos en el
             mercado de la industria en la categoria de productos químicos de limpieza gracias 
             al esfuerzo de nuestros expertos y trabajadores que hacen llegar el producto a su casa

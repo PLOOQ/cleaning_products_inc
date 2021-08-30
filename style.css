@@ -13,16 +13,28 @@
   height: 100%;
   border-radius: 10px;
 }
-.nod {
+.banner {
   width: 100%;
   height: 100vh;
-  background-image: url("img/banner_2.jpeg");
+  background-image: url("img/cleaning_supplies_nature_banner.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  font-family: "Times New Roman", Times, serif;
   padding-top: 18vh;
 }
 .navbar {
   z-index: 2;
+}
+
+#contactanos_btn {
+  color: black;
+  background-color: none;
+  border-width: 0;
+  border-width: 1px;
+  border-color: black;
+}
+
+#contactanos_btn:hover {
+  color: white;
+  background-color: black;
 }
