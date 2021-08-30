@@ -1,5 +1,6 @@
 .full {
   width: 100%;
+  height: 93vh;
 }
 
 .form_element {
@@ -11,4 +12,17 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
+}
+.nod {
+  width: 100%;
+  height: 100vh;
+  background-image: url("img/banner_2.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 18vh;
+}
+.navbar {
+  z-index: 2;
 }
