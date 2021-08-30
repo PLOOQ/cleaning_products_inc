@@ -12,8 +12,8 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-default bg-dark navbar-dark" style="position: fixed; width: 100%;">
+        <div class="container text-dark">
           <a href="#" class="navbar-brand">Cleaning Products <span class="text-warning"> Inc.</span></a>
           <button
             class="navbar-toggler"
@@ -42,20 +42,18 @@
 
     
     <main>
-      <section class="bg-dark text-light text-center py-3 ">
-        <div>
-          <img
-            src="img/cleaning_supplies_nature_banner.jpeg"
-            class="p-5 img-fluid full"
-            alt="cleaning_supplies_banner"
-          />
-        </div>
-        <div class="container-fluid">
-          <p class="h1">
+      <section class="bg-dark text-light text-center ">
+        <div class="nod">
+        <div class="container-fluid pt-5">
+          <h1 class="text-dark align-middle">
+            Cansado de confiar en productos genéricos o que prometen lo imposible?
+
+            <br/>
+            
             No esperes más
           <a  href="#info" class="btn btn-primary btn-sm fs-2 mb-1"> Contáctanos!</a>
-          </p>
-          
+          </h1>
+        </div> 
         </div>
       </section>
 
@@ -63,6 +61,7 @@
 
         <div class="container text-center">
           <h2>Productos y Servicios</h2>
+          <hr/>
         </div>
         
         <div class="container w-75 "> 
@@ -103,6 +102,7 @@
 
         <div class="container text-center">
           <h2>Quiénes somos</h2>
+          <hr/>
         </div>
 
         <div class="container d-sm-flex flex-row" >
@@ -123,32 +123,35 @@
     <section id="info" class="bg-light text-dark text-center text-light" >
       <div class="my-3 mx-auto">
         <h2>Contáctanos directamente </h2>
+        <hr/>
       </div>
       <form id = "contact-form" class = "w-50 container">
 
         <div class="mb-3">
           <input type="hidden" name="contact_number">
+
           <label class="mb-2" for="name" class="form-label">Nombre completo</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan Pérez García" name="user_name">
+          <input id="name" type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan Pérez García" name="user_name">
         </div>
 
         <div class="mb-3">
           <label class="mb-2"for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com" name="user_email">
+          <input id="email" type="email" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com" name="user_email">
         </div>
 
         <div class="form-group mb-3">
           <label class="mb-2" for="comments">Cómo podemos ayudarle?</label>
-          <textarea class="form-control" id="comments" rows="3" placeholder="Escriba aquí..." name="text_body"></textarea>
+          <textarea id="content" class="form-control" rows="3" placeholder="Escriba aquí..." name="text_body"></textarea>
         </div>
         <button  type = "submit" class="btn btn-primary btn-sm fs-3 mb-5"> Enviar</button>
       </form>
 
       </section>
 
-      <section id="info" class="bg-light text-dark text-center text-light pb-5" >
+      <section class="bg-light text-dark text-center text-light pb-5" >
         <div class="mx-auto mb-5">
           <h2>Recursos adicionales</h2>
+          <hr/>
         </div>
 
         <div class="container d-sm-flex w-50">
@@ -192,30 +195,7 @@
         });
       </script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-      <script type="text/javascript">
-        (function() {
-            // https://dashboard.emailjs.com/admin/integration
-            emailjs.init('user_P87oshGpbh5hihVWz4cTD');
-        })();
-    </script>
-     <script type="text/javascript">
-      window.onload = function() {
-          document.getElementById('contact-form').addEventListener('submit', function(event) {
-              event.preventDefault();
-              // generate a five digit number for the contact_number variable
-              this.contact_number.value = Math.random() * 100000 | 0;
-              // these IDs from the previous steps
-              emailjs.sendForm('contact_service', 'contact_form', this)
-                  .then(function() {
-                      console.log('SUCCESS!');
-                  }, function(error) {
-                      console.log('FAILED...', error);
-                  });
-          });
-      }
-  </script>
-
-
+      <script src="script.js"></script>
 </body>
 </html>
 
