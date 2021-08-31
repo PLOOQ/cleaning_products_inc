@@ -53,6 +53,7 @@
                         <hr/>
                         ¡Visita nuestras oficinas 
                         o contáctanos directamente!
+                        <br/>
                         <a id="contactanos_btn" href="#info" class="btn fs-5 my-3"> Contáctanos aquí </a>
                         </p>
                      </div>
@@ -97,18 +98,17 @@
                      </div>
                   </div>
                </div>
-            
-            <div class="row" >
-               <div class="w-75 mx-auto my-5 fs-3">
-                  <p class="text-justify">
-                     Contamos con la mayor variedad y calidad de productos en el
-                     mercado de la industria de químicos de limpieza. Para todas 
-                     las necesidades de la casa, desde el sanitario, pisos  difíciles 
-                     de limpiar, trastes sucios, y mucho más!
-                  </p>
+               <div class="row" >
+                  <div class="w-75 mx-auto my-5 fs-5">
+                     <p class="text-justify">
+                        Contamos con la mayor variedad y calidad de productos en el
+                        mercado de la industria de químicos de limpieza. Para todas 
+                        las necesidades de la casa, desde el sanitario, pisos  difíciles 
+                        de limpiar, trastes sucios, y mucho más!
+                     </p>
+                  </div>
                </div>
             </div>
-         </div>
          </section>
          <section id="about_us" class="bg-dark text-light p-5  text-center text-sm-start justify-content-between">
             <div class="container text-center">
@@ -117,8 +117,8 @@
             </div>
             <div class="container d-sm-flex flex-row" >
             <img src="img/engineers.jpeg" alt="generic_1" class="img-fluid w-50 h-50" />
-            <div class=" p-1 text-center ">
-               <p class="fs-4 px-4 text-justify">
+            <div class=" p-1 text-center text-justify">
+               <p class="fs-5 px-4 text-justify">
                   Contamos con la mayor variedad y mejor calidad de productos en el
                   mercado de la industria en la categoria de productos químicos de limpieza gracias 
                   al esfuerzo de nuestros expertos y trabajadores que hacen llegar el producto a su casa
@@ -126,53 +126,59 @@
             </div>
          </section>
       </main>
-      <section id="info" class="bg-light text-dark text-center text-light" >
-         <div class="my-3 mx-auto">
-            <h2>Contáctanos directamente </h2>
-            <hr/>
+
+      <section id="info" class="bg-light">
+         <div class="container pt-5 text-center">
+            <h2 >Contáctanos directamente </h2>
          </div>
-         <form id = "contact-form" class = "w-50 container">
-            <div class="mb-3">
-               <input type="hidden" name="contact_number">
-               <label class="mb-2" for="name" class="form-label">Nombre completo</label>
-               <input id="name" type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan Pérez García" name="user_name">
-            </div>
-            <div class="mb-3">
-               <label class="mb-2"for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
-               <input id="email" type="email" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com" name="user_email">
-            </div>
-            <div class="form-group mb-3">
-               <label class="mb-2" for="comments">Cómo podemos ayudarle?</label>
-               <textarea id="content" class="form-control" rows="3" placeholder="Escriba aquí..." name="text_body"></textarea>
-            </div>
-            <button  type = "submit" class="btn btn-primary btn-sm fs-3 mb-5"> Enviar</button>
-         </form>
-      </section>
-      <section class="bg-light text-dark text-center text-light pb-5" >
-         <div class="mx-auto mb-5">
-            <h2>Recursos adicionales</h2>
-            <hr/>
-         </div>
-         <div class="container d-sm-flex w-50">
-            <div class="row g-1">
+         <hr/>
+         <div class="container">
+            <div class="row">
                <div class="col">
-                  <div id="map" class="img-fluid"></div>
+                  <form id = "contact-form" class = "w-75 container pt-5">
+                     <div class="mb-3">
+                        <input type="hidden" name="contact_number">
+                        <label class="mb-2" for="name" class="form-label">Nombre completo</label>
+                        <input id="name" type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan García" name="user_name">
+                     </div>
+                     <div class="mb-3">
+                        <label class="mb-2"for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
+                        <input id="email" type="email" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com" name="user_email">
+                     </div>
+                     <div class="form-group mb-3">
+                        <label class="mb-2" for="comments">Cómo podemos ayudarle?</label>
+                        <textarea id="content" class="form-control" rows="3" placeholder="Escriba aquí..." name="text_body"></textarea>
+                     </div>
+                     <div class="container text-center"> 
+                        <button  type = "submit" class="btn btn-primary btn-sm fs-5"> Enviar</button>
+                     </div>
+                  </form>
                </div>
-               <div class="col">
-                  <p class="lead">
-                     Visítanos en nuestras oficinas en <br/>
-                     Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 
-                     06500 Ciudad de México, CDMX 
-                     <br/>
-                     <br/>
-                     O contáctanos por teléfono o por correo:
-                     <br/>
-                     <br/> (123) 456 - 7890
-                     <br/> name@example.com
-                  </p>
+               <div class="col pt-5">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col">
+                           <div id="map" class="img-fluid mx-auto"> </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col py-5">
+                           <p class="fs-5 text-center">
+                              Visítanos en nuestras oficinas en <br/>
+                              Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 
+                              06500 Ciudad de México, CDMX 
+                              <br/>
+                              <br/>
+                              O contáctanos por teléfono o por correo:
+                              <br/>
+                              <br/> (123) 456 - 7890
+                              <br/> name@example.com
+                           </p>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div></div>
          </div>
       </section>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
