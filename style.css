@@ -40,3 +40,7 @@
   color: white;
   background-color: black;
 }
+
+#vector {
+  border-radius: 100%;
+}
