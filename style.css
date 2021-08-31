@@ -23,7 +23,7 @@
   padding-top: 18vh;
 }
 .navbar {
-  z-index: 2;
+  z-index: 3;
 }
 
 #contactanos_btn {
@@ -37,4 +37,8 @@
 #contactanos_btn:hover {
   color: white;
   background-color: black;
+}
+
+#carousel-text {
+  position: absolute;
 }
