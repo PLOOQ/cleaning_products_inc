@@ -38,3 +38,7 @@
   color: white;
   background-color: black;
 }
+
+#carousel-text {
+  position: absolute;
+}
