@@ -43,3 +43,13 @@ window.onload = function () {
       }
     });
 };
+
+// map
+mapboxgl.accessToken =
+  "pk.eyJ1IjoicGxvb3EiLCJhIjoiY2tzdWkyNTFyMWZ0cTJubGV3c2NocjdhNSJ9.oL2KXQ6PonUC9Cu69JTsVA";
+var map = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox://styles/mapbox/streets-v11",
+  center: [-99.16767774868487, 19.426882303626584],
+  zoom: 15,
+});

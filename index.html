@@ -9,6 +9,7 @@
       <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
       <link rel="stylesheet" href="style.css" />
    </head>
+
    <body>
       <header>
          <div class="fixed-top">
@@ -39,6 +40,7 @@
             </nav>
          </div>
       </header>
+      
       <main>
          <section class=" text-light text-center" style="overflow: hidden;">
             <div class="banner">
@@ -75,18 +77,36 @@
             </div>
             <div class="container">
                <div class="row">
-                  <div class="col-12 col-md-7 mx-auto">
-                     <div id="myCarousel" class="container">
+                  <div class="col-sm-8 col-12 mx-auto" >
+                     <div id="myCarousel" class="container overflow-hidden" >
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
                            <div class="carousel-inner" >
                               <div class="carousel-item active" data-bs-interval="5000">
-                                 <img src="img/generic_cleaning_products.jpeg" class="d-block mx-auto car-img img-fluid" alt="...">
+                                 <img src="img/generic_1.jpg" class="d-block mx-auto car-img img-fluid" alt="...">
+                                 <div class="container py-2">
+                                    <div class="col-12 offset-md-2">
+                                       Categoría: Herramientas <br/>
+                                       Descripción: Atomizador de 750 mL
+                                    </div>
+                                 </div>
                               </div>
                               <div class="carousel-item"data-bs-interval="5000">
-                                 <img src="img/supplies-stock.jpeg" class="d-block mx-auto car-img img-fluid" alt="...">
+                                 <img src="img/generic_2.jpeg" class="d-block mx-auto car-img img-fluid" alt="...">
+                                 <div class="container py-2">
+                                    <div class="col-12 offset-md-2">
+                                       Categoría: Químicos <br/>
+                                       Descripción: Limpiador de superficies múltiples de 2L 
+                                    </div>
+                                 </div>
                               </div>
                               <div class="carousel-item"data-bs-interval="5000">
                                  <img src="img/generic_3.jpeg" class="d-block mx-auto car-img img-fluid" alt="...">
+                                 <div class="container py-2">
+                                    <div class="col-12 offset-md-2">
+                                       Categoría: Químicos <br/>
+                                       Descripción: Limpiador para inodoros de baño de 2L
+                                 </div>
+                                 </div>
                               </div>
                            </div>
                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -100,17 +120,19 @@
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="row" >
-                  <div class="w-75 mx-auto my-5 fs-5">
-                     <p class="text-justify">
-                        Contamos con la mayor variedad y calidad de productos en el
-                        mercado de la industria de químicos de limpieza. Para todas 
-                        las necesidades de la casa, desde el sanitario, pisos  difíciles 
-                        de limpiar, trastes sucios, y mucho más!
-                     </p>
+               
+                  <div class="col-sm-4" >
+                        <div class="mt-1 mb-5 fs-5">
+                           <p class="text-justify">
+                              Aquí en Cleaning Products Inc, nuestra prioridad es su
+                              satisfacción y como tal, contamos con la mayor variedad y calidad de productos en el
+                              mercado de la industria de químicos de limpieza. Para todas 
+                              las necesidades de la casa, desde el sanitario, pisos  difíciles 
+                              de limpiar, trastes sucios, y mucho más!
+                           </p>
+                        </div>
                   </div>
-               </div>
+               </div>  
             </div>
          </section>
          <section id="about_us" class="bg-dark text-light p-5  text-center text-sm-start justify-content-between">
@@ -118,87 +140,93 @@
                <h2>Quiénes somos</h2>
                <hr/>
             </div>
-            <div class="container d-sm-flex flex-row" >
-            <img src="img/engineers.jpeg" alt="generic_1" class="img-fluid w-50 h-50" />
+            <div class="row">
+               <div class="col-12 col-sm">
+                  <img src="img/engineers.jpeg" alt="generic_1" class="img-fluid" />
+               </div>
+               <div class="col">
             <div class=" p-1 text-center text-justify">
                <p class="fs-5 px-4 text-justify">
+                  Cleaning Products Inc es una empresa dedicada 
                   Contamos con la mayor variedad y mejor calidad de productos en el
                   mercado de la industria en la categoria de productos químicos de limpieza gracias 
                   al esfuerzo de nuestros expertos y trabajadores que hacen llegar el producto a su casa
+                  SOMOS MAS CHIDOS QUE LA COMPETENCIA
                </p>
             </div>
-         </section>
-      </main>
-
-      <section id="info" class="bg-light">
-         <div class="container pt-5 text-center">
-            <h2 >Contáctanos directamente </h2>
          </div>
-         <hr/>
-         <div class="container">
-            <div class="row">
-               <div class="col">
-                  <form id = "contact-form" class = "w-75 container pt-5">
-                     <div class="mb-3">
-                        <input type="hidden" name="contact_number">
-                        <label class="mb-2" for="name" class="form-label">Nombre completo</label>
-                        <input id="name" type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan García" name="user_name">
-                     </div>
-                     <div class="mb-3">
-                        <label class="mb-2"for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
-                        <input id="email" type="email" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com" name="user_email">
-                     </div>
-                     <div class="form-group mb-3">
-                        <label class="mb-2" for="comments">Cómo podemos ayudarle?</label>
-                        <textarea id="content" class="form-control" rows="3" placeholder="Escriba aquí..." name="text_body"></textarea>
-                     </div>
-                     <div class="container text-center"> 
-                        <button  type = "submit" class="btn btn-primary btn-sm fs-5"> Enviar</button>
-                     </div>
-                  </form>
-               </div>
-               <div class="col pt-5">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col">
-                           <div id="map" class="img-fluid mx-auto"> </div>
+         </div>
+         </section>
+      
+
+         <section id="info" class="bg-light">
+            <div class="container pt-5 text-center">
+               <h2 >Contáctanos directamente </h2>
+            </div>
+            <hr/>
+            <div class="container">
+               <div class="row">
+                  <div class="col">
+                     <form id = "contact-form" class = "container border py-5">
+                        <div class="mb-3">
+                           <input type="hidden" name="contact_number">
+                           <label class="mb-2" for="name" class="form-label">Nombre completo</label>
+                           <input id="name" type="text" class="form-control" id="formGroupExampleInput" placeholder="Juan García" name="user_name">
                         </div>
-                     </div>
-                     <div class="row">
-                        <div class="col py-5">
-                           <p class="fs-5 text-center">
-                              Visítanos en nuestras oficinas en <br/>
-                              Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 
-                              06500 Ciudad de México, CDMX 
-                              <br/>
-                              <br/>
-                              O contáctanos por teléfono o por correo:
-                              <br/>
-                              <br/> (123) 456 - 7890
-                              <br/> name@example.com
-                           </p>
+                        <div class="mb-3">
+                           <label class="mb-2"for="formGroupExampleInput2" class="form-label">Correo electrónico</label>
+                           <input id="email" type="email" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com" name="user_email">
+                        </div>
+                        <div class="form-group mb-3">
+                           <label class="mb-2" for="comments">Cómo podemos ayudarle?</label>
+                           <textarea id="content" class="form-control" rows="12" placeholder="Escriba su mensaje para nosotros aquí..." name="text_body"></textarea>
+                        </div>
+                        <div class="container text-center"> 
+                           <button  type = "submit" class="btn btn-primary btn-sm fs-5"> Enviar</button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col">
+                     <div class="container border pt-5">
+                        <div class="row">
+                           <div class="col">
+                              <div id="map" class="img-fluid mx-auto"> </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col pt-5">
+                              <p class="fs-5 text-center">
+                                 Visítanos en nuestras oficinas en <br/>
+                                 Av. Paseo de la Reforma, Juárez, Cuauhtémoc, 
+                                 06500 Ciudad de México, CDMX 
+                                 <br/>
+                                 <br/>
+                                 O contáctanos por teléfono o por correo:
+                                 <br/>
+                                 <br/> (123) 456 - 7890
+                                 <br/> name@example.com
+                              </p>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-         </div>
-      </section>
+         </section>
+      </main>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> 
       <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
-      <script>
-         mapboxgl.accessToken = 'pk.eyJ1IjoicGxvb3EiLCJhIjoiY2tzdWkyNTFyMWZ0cTJubGV3c2NocjdhNSJ9.oL2KXQ6PonUC9Cu69JTsVA';
-         var map = new mapboxgl.Map({
-         container: 'map',
-         style: 'mapbox://styles/mapbox/streets-v11',
-         center:[-99.16767774868487,19.426882303626584],
-         zoom:15,
-         });
-      </script>
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
       <script src="script.js"></script>
    </body>
+
    <footer>
-      <a href="https://www.freepik.com/vectors/cleaning">Cleaning vector created by freepik - www.freepik.com</a>
+      <section class="bg-dark text-light  py-3" >
+         <div class="container text-center" style="color: gray; text-decoration: none;">
+            <p> Website created by Pablo Loo-Quintero</p>
+            <p>Created with HTML, CSS, Javascript and Bootstrap</p>
+            <a class="text-decoration-none" href="https://www.freepik.com/vectors/cleaning">Cleaning vector created by freepik - www.freepik.com</a>
+         </div>
+      </section>
    </footer>
 </html>
