@@ -28,17 +28,18 @@
 
 #contactanos_btn {
   color: black;
-  background-color: none;
+  background-color: #ffc107;
   border-width: 0;
-  border-width: 1px;
-  border-color: black;
 }
 
 #contactanos_btn:hover {
-  color: white;
-  background-color: black;
+  background-color: #ddaa12;
 }
 
 #vector {
   border-radius: 100%;
+}
+
+.nav-section:hover {
+  color: #ffc107 !important;
 }

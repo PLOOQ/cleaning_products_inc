@@ -18,21 +18,21 @@
                   <a href="#" class="navbar-brand">Cleaning Products <span class="text-warning"> Inc.</span></a>
                   <button
                      class="navbar-toggler"
-                     typer="button"
+                     type="button"
                      data-bs-toggle="collapse"
-                     data-bs-target="#navmenu">
+                     data-bs-target="#navmenu"> 
                   <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navmenu">
                      <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                           <a href="#products_services" class="nav-link"> Productos y Servicios</a>
+                           <a href="#products_services" class="nav-link nav-section"> Productos y Servicios</a>
                         </li>
                         <li class="nav-item">
-                           <a href="#about_us" class="nav-link"> Quiénes somos</a>
+                           <a href="#about_us" class="nav-link nav-section"> Quiénes somos</a>
                         </li>
                         <li class="nav-item">
-                           <a href="#info" class="nav-link"> Contáctanos</a>
+                           <a href="#info" class="nav-link nav-section"> Contáctanos</a>
                         </li>
                      </ul>
                   </div>
@@ -56,7 +56,7 @@
                         ¡Visita nuestras oficinas 
                         o contáctanos directamente!
                         <br/>
-                        <a id="contactanos_btn" href="#info" class="btn fs-5 my-3"> Contáctanos aquí </a>
+                        <a id="contactanos_btn" href="#info" class="btn btn-lg fs-5 my-3 "> Contáctanos aquí </a>
                         </p>
                         <div id="hidden image" class="d-sm-none">
                            <img id="vector" src="img/cleaning_products_pack_vector.jpeg" alt="" class="img-fluid" style="box-shadow: 0 0 8px 8px white inset;">
@@ -73,20 +73,22 @@
          <section id="products_services" class="bg-light text-dark p-5 text-center text-sm-start justify-content-between">
             <div class="container text-center">
                <h2>Productos y Servicios</h2>
-               <hr/>
+               <hr class="mb-5"/>
             </div>
             <div class="container">
                <div class="row">
-                  <div class="col-sm-8 col-12 mx-auto" >
-                     <div id="myCarousel" class="container overflow-hidden" >
+                  <div class="col-sm-6 col-12 mx-auto" >
+                     <div id="myCarousel" class="container" >
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
                            <div class="carousel-inner" >
                               <div class="carousel-item active" data-bs-interval="5000">
                                  <img src="img/generic_1.jpg" class="d-block mx-auto car-img img-fluid" alt="...">
                                  <div class="container py-2">
                                     <div class="col-12 offset-md-2">
-                                       Categoría: Herramientas <br/>
-                                       Descripción: Atomizador de 750 mL
+                                       <p class="category">
+                                          Categoría: Herramientas <br/>
+                                          Descripción: Atomizador de 750 mL
+                                       </p>
                                     </div>
                                  </div>
                               </div>
@@ -94,8 +96,10 @@
                                  <img src="img/generic_2.jpeg" class="d-block mx-auto car-img img-fluid" alt="...">
                                  <div class="container py-2">
                                     <div class="col-12 offset-md-2">
-                                       Categoría: Químicos <br/>
-                                       Descripción: Limpiador de superficies múltiples de 2L 
+                                       <p class="category">
+                                          Categoría: Químicos <br/>
+                                          Descripción: Limpiador múltiple 2L            
+                                       </p>
                                     </div>
                                  </div>
                               </div>
@@ -103,8 +107,10 @@
                                  <img src="img/generic_3.jpeg" class="d-block mx-auto car-img img-fluid" alt="...">
                                  <div class="container py-2">
                                     <div class="col-12 offset-md-2">
-                                       Categoría: Químicos <br/>
-                                       Descripción: Limpiador para inodoros de baño de 2L
+                                       <p class="category">
+                                          Categoría: Químicos <br/>
+                                          Descripción: Limpiador para inodoros 2L
+                                       </p>
                                  </div>
                                  </div>
                               </div>
@@ -121,7 +127,7 @@
                      </div>
                   </div>
                
-                  <div class="col-sm-4" >
+                  <div class="col-sm-6" >
                         <div class="mt-1 mb-5 fs-5">
                            <p class="text-justify">
                               Aquí en Cleaning Products Inc, nuestra prioridad es su
@@ -137,15 +143,15 @@
          </section>
          <section id="about_us" class="bg-dark text-light p-5  text-center text-sm-start justify-content-between">
             <div class="container text-center">
-               <h2>Quiénes somos</h2>
-               <hr/>
+               <h2>¿Quiénes somos?</h2>
+               <hr class="mb-5"/>
             </div>
             <div class="row">
                <div class="col-12 col-sm">
                   <img src="img/engineers.jpeg" alt="generic_1" class="img-fluid" />
                </div>
                <div class="col">
-            <div class=" p-1 text-center text-justify">
+            <div class=" p-1 text-justify">
                <p class="fs-5 px-4 text-justify">
                   Cleaning Products Inc es una empresa dedicada a la producción y distribución de productos
                   de limpieza. Contamos con la mayor variedad y mejor calidad de productos en el
@@ -163,12 +169,12 @@
          <section id="info" class="bg-light">
             <div class="container pt-5 text-center">
                <h2 >Contáctanos directamente </h2>
+               <hr class="mb-5"/>
             </div>
-            <hr/>
             <div class="container">
                <div class="row">
                   <div class="col">
-                     <form id = "contact-form" class = "container border py-5">
+                     <form id = "contact-form" class = "container border py-5 mb-5">
                         <div class="mb-3">
                            <input type="hidden" name="contact_number">
                            <label class="mb-2" for="name" class="form-label">Nombre completo</label>
@@ -179,16 +185,16 @@
                            <input id="email" type="email" class="form-control" id="formGroupExampleInput2" placeholder="nombre@ejemplo.com" name="user_email">
                         </div>
                         <div class="form-group mb-3">
-                           <label class="mb-2" for="comments">Cómo podemos ayudarle?</label>
+                           <label class="mb-2" for="comments">¿Cómo podemos ayudarle?</label>
                            <textarea id="content" class="form-control" rows="12" placeholder="Escriba su mensaje para nosotros aquí..." name="text_body"></textarea>
                         </div>
-                        <div class="container text-center"> 
-                           <button  type = "submit" class="btn btn-primary btn-sm fs-5"> Enviar</button>
+                        <div class="text-center"> 
+                           <button  type = "submit" class="btn btn-primary fs-5 w-100"> Enviar</button>
                         </div>
                      </form>
                   </div>
                   <div class="col">
-                     <div class="container border pt-5">
+                     <div class="container border pt-5 mb-5">
                         <div class="row">
                            <div class="col">
                               <div id="map" class="img-fluid mx-auto"> </div>
@@ -225,6 +231,7 @@
       <section class="bg-dark text-light  py-3" >
          <div class="container text-center" style="color: gray; text-decoration: none;">
             <p> Website created by Pablo Loo-Quintero</p>
+            <p> Inquiries: pabloloo@aggienetwork.com </p>
             <p>Created with HTML, CSS, Javascript and Bootstrap</p>
             <a class="text-decoration-none" href="https://www.freepik.com/vectors/cleaning">Cleaning vector created by freepik - www.freepik.com</a>
          </div>
